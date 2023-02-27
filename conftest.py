@@ -2,7 +2,7 @@ import pytest
 from main import BooksCollector
 
 @pytest.fixture
-def collector(scope='session'):
+def collector(scope='class'):
     return BooksCollector()
 
 @pytest.fixture(scope='function')
